@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a Number: "));
+        if(num > 0){
+            document.writeln(num + " is Positive<br>");
+            console.log(num + " is Positive");
+        } else {
+            document.writeln(num + " is Negative<br>");
+            console.log(num + " is Negative");
+        }
+
+        let check = parseInt(prompt("Enter a Number: "));
+        if(check % 2 == 0){
+            document.writeln(check + " is Even<br>");
+            console.log(check + " is Even");
+        } else {
+            document.writeln(check + " is Odd<br>");
+            console.log(check + " is Odd");
+        }
+
+        let marks = parseInt(prompt("Enter Rajnandini's Marks: "));
+        if(marks >= 90){
+            document.writeln(marks + " is Top Class<br>");
+            console.log(marks + " is Top Class");
+        } else if(marks >= 40 && marks < 90){
+            document.writeln(marks + " is Pass<br>");
+            console.log(marks + " is Pass");
+        } else {
+            document.writeln(marks + " is Fail<br>");
+            console.log(marks + " is Fail");
+        }
+    </script>
+</body>
+</html>

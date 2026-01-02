@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Survey Form</title>
+</head>
+<body>
+
+<h1>Survey Form</h1>
+
+<form action="submit.html" method="post">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="age">Age:</label><br>
+<input type="number" id="age" name="age" min="1" required><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br><br>
+
+<label for="subject">Favorite Subject:</label><br>
+<select id="subject" name="subject">
+<option value="math">Mathematics</option>
+<option value="science">Science</option>
+<option value="history">History</option>
+</select><br><br>
+
+<input type="submit" value="Submit Survey">
+</form>
+
+<p style="margin-top:20px;"><b>Designed by Rajnandini Dhongade</b></p>
+
+</body>
+</html>

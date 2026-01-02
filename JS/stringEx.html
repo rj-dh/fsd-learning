@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+        let str1 = "Hello";
+        let str2 = "Rajnandini Dhongade";
+        console.log("Concatination : " + str1 + " " + str2);
+        console.log("Length Of String : " + str1.length);
+        console.log("Character At Index 2 : " + str1.charAt(2));
+        console.log("Substring(0,3) : " + str1.substring(0,3));
+
+        let a = "Javascript";
+        let b = "javascript";
+        if(a.toLowerCase() === b.toLowerCase()) {
+            console.log("Both The String Are Equal");
+        } else {
+            console.log("Both The String Are Not Equal");
+        }
+
+        let sent = "Hello Mca User Welcome To Mca Class New User";
+        console.log("Index of Mca : " + sent.indexOf("Mca"));
+        console.log("Includes Class : " + sent.includes("Class"));
+        console.log("Starts with Hello : " + sent.startsWith("Hello"));
+        console.log("Ends with User : " + sent.endsWith("User"));
+
+        let text = "Hello Master Student Master";
+        let newtext = text.replaceAll("Master", "MCA");
+        console.log("Old String : " + text);
+        console.log("New String : " + newtext);
+
+        let word = "Hello User";
+        let count = 0;
+        for(let ch of word.toLowerCase()) {
+            if("aeiou".includes(ch))
+                count++;
+        }
+        console.log("Total Vowels : " + count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container{
+      position: relative;
+      width: 450px;
+      height: 320px;
+      border: 2px dashed darkblue;
+      margin: 20px auto;
+      background-color: lightseagreen;
+      color: white;
+    }
+
+    .box{
+      width:130px;
+      height: 55px;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .static-box{
+      position: static;
+      background: steelblue;
+    }
+
+    .relative-box{
+      position: relative;
+      top:25px;
+      left: 15px;
+      background: tomato;
+    }
+    .absolute-box{
+      position: absolute;
+      background: gold;
+      top: 60px;
+      right: 20px;
+      color: black;
+    }
+
+    .sticky-box{
+      position: sticky;
+      top:0;
+      background: purple;
+    }
+
+    .fixed-box{
+      position: fixed;
+      top:520px;
+      right: 20px;
+      background-color: bisque;
+      color: black;
+    }
+
+    .name-tag{
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: darkred;
+    }
+  </style>
+</head> 
+
+<body>
+
+  <h2 style="text-align:center; color: navy;">CSS Positioning Example</h2>
+
+  <div class="container">
+    <div class="box static-box">Static</div>
+    <div class="box relative-box">Relative</div>
+    <div class="box absolute-box">Absolute</div>
+    <div class="box sticky-box">Sticky</div>
+    <div class="box fixed-box">Fixed</div>
+  </div>
+
+  <div class="name-tag">
+    Designed by Rajnandini Dhongade
+  </div>
+
+  <p style="height:800px; padding:20px;">
+    MIT Vishwaprayag University (MIT VPU) in Solapur is a private university focused on a multidisciplinary,
+    research-based, and holistic learning experience, established by the MAEER's MIT Group of Pune.
+    <br><br>
+    Hello User, how are you?
+  </p>
+
+</body>
+</html> 

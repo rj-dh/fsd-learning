@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment by Rajnandini Dhongade</title>
+</head>
+
+<body>
+    <h2>Marks Analysis by Rajnandini Dhongade</h2>
+    <script>
+
+        let marks = [45, 90, 56, 87, 79, 99, 45];
+
+        console.log("Original Marks (by Rajnandini Dhongade): ", marks);
+
+        marks.sort((a, b) => a - b);
+        console.log("Ascending Marks: ", marks);
+
+        marks.reverse();
+        console.log("Reverse Order: ", marks);
+
+        let sliced = marks.slice(0, 3);
+        console.log("Sliced Top 3 Marks: ", sliced);
+
+        let passed = marks.filter(m => m >= 60);
+        console.log("Marks >= 60: ", passed);
+
+        let gracemarks = marks.map(m => m + 5);
+        console.log("Grace Marks: ", gracemarks);
+
+        let total = marks.reduce((sum, m) => sum + m, 0);
+        console.log("Total Marks: ", total);
+
+        let avg = total / marks.length;
+        console.log("Average Marks: ", avg);
+    </script>
+
+</body>
+</html>

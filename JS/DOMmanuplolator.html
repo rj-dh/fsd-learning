@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation By Rajnandini Dhongade</title>
+</head>
+<body>
+    <h1 id="mainTitle">Welcome to DOM Manipulation Example By Rajnandini Dhongade</h1>
+    <p class="info">This is our 15th Assignment</p>
+    <p class="info">This is MCA Class</p>
+    <p class="info">My Roll Number Is 48</p>
+    <p class="info">Student Name: Rajnandini Dhongade</p>
+    <label class="change">This is A Label</label>
+    <button id="labelcng">Change The Label</button>
+    <button id="changeBtn">Change The Text</button>
+
+    <script>
+        //1.getElementById()
+        let title = document.getElementById("mainTitle");
+        console.log(title.innerText);
+
+        //2.getElementByClassName()
+        let para = document.getElementsByClassName("info");
+        console.log(para[0].innerText);
+
+        //3.getElementByTagName()
+        let tagname = document.getElementsByTagName("p");
+        console.log(tagname.length);
+
+        //4.querySelector
+        let firstPara = document.querySelector(".info");
+        console.log(firstPara.innerText);
+
+//5.querySelectorAll
+        let allinfo = document.querySelectorAll(".info");
+        allinfo.forEach((p) => console.log(p.innerText));
+
+        //Button to change main title
+        document.getElementById("changeBtn").addEventListener("click", function() {
+            title.innerText = "DOM Manipulated Successfully By Rajnandini Dhongade";
+            title.style.color = 'red';
+        });
+         //Button to change label
+        let labelChange = document.getElementsByClassName("change")[0];
+        document.getElementById("labelcng").addEventListener("click", function() {
+            labelChange.innerText = "Label Changed By Rajnandini Dhongade";
+            labelChange.style.color = 'red';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Selectors In CSS</title>
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      p {
+        color: blue;
+        border: 1px solid darkblue;
+        padding: 5px;
+      }
+      #unique {
+        background-color: lightcoral;
+        font-weight: bold;
+      }
+      .highlight {
+        background-color: yellow;
+        font-style: italic;
+      }
+      h1,
+      h2 {
+        color: darkred;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>Selectors In CSS</h1>
+    <h2>My Name Is Rajnandini Dhongade</h2>
+
+    <p>
+      This paragraph is styled using the <b>tag selector</b> (targets all
+      &lt;p&gt; elements).
+    </p>
+
+    <p id="unique">
+      This paragraph has an <b>ID selector</b> (#unique) applied to it.
+    </p>
+  <p class="highlight">
+      This paragraph uses the <b>class selector</b> (.highlight).
+    </p>
+
+    <p class="highlight" id="unique">
+      This paragraph has both <b>class</b> and <b>ID</b> selectors applied.
+    </p>
+
+    <div>
+      This div is affected by the <b>universal selector</b> (*) because it sets
+      font-family and spacing on all elements.
+    </div>
+  </body>
+</html>

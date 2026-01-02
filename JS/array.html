@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demonstration</title>
+</head>
+<body>
+
+    <script>
+        let Animals = ['Dog', 'Cat', 'Tiger'];
+        console.log("Animals: \n" + Animals);
+        console.log("First Animal: \n" + Animals[0]);
+        console.log("Last Animal: \n" + Animals[Animals.length - 1]);
+
+        let Numbers = [10, 20, 30, 40];
+        console.log("Numbers Before Adding: \n" + Numbers);
+
+        Numbers.push(800);
+        console.log("Numbers After Adding At Last: \n" + Numbers);
+
+        Numbers.unshift(78);
+        console.log("Numbers After Adding At First: \n" + Numbers);
+
+        Numbers.pop();
+        console.log("After Removing Last Element: \n" + Numbers);
+
+        Numbers.shift();
+        console.log("After Removing First Element: \n" + Numbers);
+
+        let names = ['Rajnandini Dhongade', 'Rajnandini Dhongade', 'Rajnandini Dhongade'];
+        for (let i = 0; i < names.length; i++) {
+            console.log("Name in class: \n" + names[i]);
+        }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d transformation demo</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #111;
+            color: lightgoldenrodyellow;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+        .box{
+            width: 140px;
+            height: 110px;
+            background-color: lightseagreen;
+            border: 3px solid coral;
+            display: flex;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .rotate:hover{
+            transform: rotate(40deg);
+        }
+        .translate:hover{
+            transform: translate(40px,150px);
+        }
+       .scale:hover{
+            transform: scale(1.4);
+        }
+        .skew:hover{
+            transform: skew(15deg);
+        }
+        </style>
+</head>
+
+<center>
+<body>
+    <h1>CSS 2D Transform Demo</h1>
+    <p>Hover over each box to see the transform effect</p>
+
+    <div class="container">
+        <div class="box rotate">Rotate</div>
+        <div class="box translate">Translate</div>
+        <div class="box skew">Skew</div>
+        <div class="box scale">Scale</div>
+        <div class="box combo">Combo</div>
+    </div>
+</body>
+</center>
+</html>

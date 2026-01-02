@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overflow Properties Example</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .box {
+      width: 250px;
+      height: 100px;
+      border: 2px solid black;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: khaki;
+      overflow-wrap: break-word;
+    }
+
+    .overflow-visible {
+      overflow: visible;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .overflow-auto {
+      overflow: auto;
+    }
+
+    .overflow-scroll {
+      overflow: scroll;
+    }
+
+    .name {
+      font-weight: bold;
+      color: darkblue;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Overflow Properties</h2>
+  <div class="name">By Rajnandini Dhongade</div>
+
+  <div class="box overflow-visible">
+    <b>Overflow: Visible</b><br>
+    This content will overflow outside the box if it is too long. Rajnandini Dhongade demonstrates the visible overflow property.
+  </div>
+
+  <div class="box overflow-hidden">
+    <b>Overflow: Hidden</b><br>
+    This content will be clipped and hidden when it exceeds the box boundaries. Rajnandini Dhongade shows hidden overflow.
+  </div>
+
+  <div class="box overflow-auto">
+    <b>Overflow: Auto</b><br>
+    Scrollbars will appear automatically if content overflows. Rajnandini Dhongade demonstrates overflow-auto.
+  </div>
+
+  <div class="box overflow-scroll">
+    <b>Overflow: Scroll</b><br>
+    Scrollbars are always visible, regardless of content. Rajnandini Dhongade demonstrates overflow-scroll.
+  </div>
+</body>
+</html>

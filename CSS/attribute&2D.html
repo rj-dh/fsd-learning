@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Attribute Selector</title>
+    <style>
+        a[target="_blank"] {
+            color: aqua;
+            font-weight: bolder;
+        }
+        [title~="red"] {
+            border: 2px solid red;
+        }
+        a[href*="google"] {
+            background-color: aquamarine;
+        }
+        img[src^="logo"] {
+            border: 3px  soild blue;
+            width: 100px;
+        }
+        a[href$=".pdf"] {
+            text-decoration: line-through;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Combined Attribute Selector</h2>
+    <h4>By Rajnandini Dhongade</h4>
+<hr>
+
+   <h3>1. Exact Match Selector [attr="value"]</h3>
+    <a href="http://example.com" target="_blank">Open In A New Tab</a><br>
+    <a href="http://example.com" target="_self">Opens In Same Tab</a>
+    <hr>
+    <h3>2. Contain Word [attr~="value"]</h3>
+    <p title="red flower">This Is A Paragraph That Has "Flower" In Title</p>
+    <p title="blue flower">This Does Not Do Anything</p>
+    <hr>
+
+    <h3>3. Contains Substring [attr*="value"]</h3>
+    <a href="http://google.com">Google Link</a><br>
+    <a href="http://yahoo.com">Yahoo Link</a>
+    <hr>
+
+    <h3>4. Start With [attr^="value"]</h3>
+    <img src="Screenshot 2025-09-01 150024.png" alt="Home Icon"><br>
+    <img src="logo.png" alt="Logo">
+    <hr>
+
+    <h3>5. End With [attr$="value"]</h3>
+    <a href="download.pdf">Pdf Example</a><br>
+    <a href="download.docx">Docs Example</a>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Animated Button</title>
+  <style>
+    .btn {
+      background-color: lightseagreen;
+      display: inline-flex;
+      color: black;
+      padding: 14px 28px;
+      border: none;
+      cursor: pointer;
+      border-radius: 12px;
+      font-size: 15px;
+      transition: all 0.5s ease;
+    }
+
+    .right:hover {
+      background-color: black;
+      color: white;
+      transform: translateX(90px);
+      box-shadow: 0 6px 14px lightgreen;
+    }
+
+    .left:hover {
+      background-color: black;
+      color: white;
+      transform: translateX(-90px);
+      box-shadow: 0 6px 14px lightgreen;
+    }
+  </style>
+</head>
+
+<body align="center">
+  <h2>Animated Button Example</h2>
+
+  <button class="btn right">Move Right</button>
+  <br><br>
+  <button class="btn left">Move Left</button>
+
+  <br><br><br>
+  <h4>Rajnandini Dhongade</h4>
+</body>
+</html>
+

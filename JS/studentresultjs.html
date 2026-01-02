@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Objects By Rajnandini Dhongade</title>
+</head>
+<body>
+  <script>
+    /* Syntax
+      let objectName = {
+         key1:value1,
+         key2:value2,
+         key3:value3
+      }*/
+
+    //example Object
+    let Student = {
+      name: "Rajnandini Dhongade",
+      branch: "CSE",
+      city: "Pune",
+      id: "48",
+    };
+    console.log(Student);
+    console.log("Name of Student:", Student.name);
+console.log("City:", Student["city"]);
+
+    //modify Object Properties
+    Student.name = "Rajnandini Dhongade";
+    Student.id = "01";
+    console.log(Student);
+
+    //object with Method- behaviour
+    let person = {
+      firstname: "Rajnandini",
+      lastname: "Dhongade",
+      fullname: function () {
+        return this.firstname + " " + this.lastname;
+      },
+    };
+    console.log("New Object Fullname: " + person.fullname());
+
+    // For-in loop
+    let car = {
+      brand: "Tata",
+      model: "Nexon",
+      year: "2025",
+    };
+    for (let k in car) {
+      console.log(k + " : " + car[k]);
+    }
+
+    // Objects in Array
+    let Fruits = [
+      { name: "Banana", id: "001" },
+      { name: "Apple", id: "002" },
+      { name: "Mango", id: "003" },
+    ];
+    Fruits.forEach(function (s) {
+      console.log(s.name + " " + s.id);
+    });
+
+    // Nested Objects
+    let StudentDetails = {
+      name: "Rajnandini Dhongade",
+      address: {
+        city: "Pune",
+        pin: "410101",
+      },
+    };
+    console.log(StudentDetails);
+    console.log(StudentDetails.address.city);
+
+    // Student Management Result App
+    let StudentAssign = {
+      name: "Rajnandini Dhongade",
+      id: "48",
+      sub1: 62,
+      sub2: 45,
+      sub3: 75,
+      total: function () {
+        return this.sub1 + this.sub2 + this.sub3;
+      },
+      average: function () {
+        return this.total() / 3;
+      },
+      grade: function () {
+        let per = (this.total() / 240) * 100;
+        
+if (per > 90) {
+          return "Distinction";
+        } else if (per <= 90 && per > 80) {
+          return "First";
+        } else if (per <= 80 && per > 60) {
+          return "Second";
+        } else if (per <= 60 && per > 50) {
+          return "Third";
+        } else if (per <= 50 && per >= 40) {
+          return "Pass";
+        } else {
+          return "Fail";
+        }
+      }
+    };
+console.log(StudentAssign);
+
+    console.log("Marks:", StudentAssign.sub1, StudentAssign.sub2, StudentAssign.sub3);
+    console.log("Total Marks of Student:", StudentAssign.total());
+    console.log("Average Marks of Student:", StudentAssign.average().toFixed(2));
+console.log("Grade of Student:", StudentAssign.grade());
+
+  </script>
+</body>
+</html>
